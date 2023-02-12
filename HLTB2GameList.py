@@ -31,7 +31,7 @@ class HLTB2GameList:
 
     def customName(self,id):
         ## TODO Make a y/n answer
-        print("Do You Wish search for another name? 0 = No, 1 = Yes ")
+        print("Do You wish search for another name? 0 = No, 1 = Yes ")
         if self.inputChoosing(0,2):
             name = input("Write a Alternative Name: ")
             self.searchGame(id,name)
@@ -39,7 +39,7 @@ class HLTB2GameList:
     ## TODO Extract this function from the main script
     def inputChoosing(self, min: int, length: int):
         while True:
-            selection = int(input("Choose an option (Default: 0): ") or "0")
+            selection = int(input("Choose an option (Default: "+str(min)+"): ") or str(min))
             if selection >= min and selection < length:
                 break;
             print("Pardon, Could You repeat?")
