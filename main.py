@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import os
 from HLTB2GameList import HLTB2GameList
 

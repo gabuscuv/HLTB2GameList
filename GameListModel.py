@@ -1,5 +1,4 @@
 import sqlite3
-import os
 
 class GameListDB:
     def __init__(self,path) -> None:
